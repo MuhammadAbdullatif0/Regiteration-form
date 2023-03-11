@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,800&display=swap");
+:root {
+  --success: #2ecc71;
+  --error: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #000428, #052f54);
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.controller {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.controller label {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.controller input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 7px;
+  border: 2px solid #c0bdbd;
+  padding: 10px;
+}
+
+.controller input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.controller.success input {
+  border-color: var(--success);
+}
+.controller.error input {
+  border-color: var(--error);
+}
+
+.controller small {
+  color: var(--error);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.controller.error small {
+  visibility: visible;
+}
+
+form button {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #000428, #004e92);
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
